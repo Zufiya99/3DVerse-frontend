@@ -1,0 +1,948 @@
+{
+  "departments": {
+    "Information Technology": {
+      "Sem 1": [
+        {
+          "id": 1,
+          "name": "John Doe",
+          "rollNo": "IT101",
+          "year": "First",
+          "acadYear": "2024-25"
+        },
+        {
+          "id": 2,
+          "name": "Alice Smith",
+          "rollNo": "IT102",
+          "year": "First",
+          "acadYear": "2024-25"
+        },
+        {
+          "id": 3,
+          "name": "Bob Johnson",
+          "rollNo": "IT103",
+          "year": "First",
+          "acadYear": "2024-25"
+        },
+        {
+          "id": 4,
+          "name": "Charlie Brown",
+          "rollNo": "IT104",
+          "year": "First",
+          "acadYear": "2024-25"
+        },
+        {
+          "id": 5,
+          "name": "David Williams",
+          "rollNo": "IT105",
+          "year": "First",
+          "acadYear": "2024-25"
+        },
+        {
+          "id": 6,
+          "name": "Emma Davis",
+          "rollNo": "IT106",
+          "year": "First",
+          "acadYear": "2024-25"
+        },
+        {
+          "id": 7,
+          "name": "Liam Miller",
+          "rollNo": "IT107",
+          "year": "First",
+          "acadYear": "2024-25"
+        },
+        {
+          "id": 8,
+          "name": "Olivia Wilson",
+          "rollNo": "IT108",
+          "year": "First",
+          "acadYear": "2024-25"
+        }
+      ],
+      "Sem 2": [
+        {
+          "id": 9,
+          "name": "Noah Taylor",
+          "rollNo": "IT201",
+          "year": "First",
+          "acadYear": "2024-25"
+        },
+        {
+          "id": 10,
+          "name": "Sophia Martinez",
+          "rollNo": "IT202",
+          "year": "First",
+          "acadYear": "2024-25"
+        },
+        {
+          "id": 11,
+          "name": "Ethan Harris",
+          "rollNo": "IT203",
+          "year": "First",
+          "acadYear": "2024-25"
+        },
+        {
+          "id": 12,
+          "name": "Mia Anderson",
+          "rollNo": "IT204",
+          "year": "First",
+          "acadYear": "2024-25"
+        },
+        {
+          "id": 13,
+          "name": "James Thomas",
+          "rollNo": "IT205",
+          "year": "First",
+          "acadYear": "2024-25"
+        },
+        {
+          "id": 14,
+          "name": "Charlotte White",
+          "rollNo": "IT206",
+          "year": "First",
+          "acadYear": "2024-25"
+        },
+        {
+          "id": 15,
+          "name": "Benjamin Clark",
+          "rollNo": "IT207",
+          "year": "First",
+          "acadYear": "2024-25"
+        },
+        {
+          "id": 16,
+          "name": "Amelia Lewis",
+          "rollNo": "IT208",
+          "year": "First",
+          "acadYear": "2024-25"
+        }
+      ]
+    },
+    "Computer Engineering": {
+      "Sem 1": [
+        {
+          "id": 17,
+          "name": "Lucas Walker",
+          "rollNo": "CE101",
+          "year": "First",
+          "acadYear": "2024-25"
+        },
+        {
+          "id": 18,
+          "name": "Harper Hall",
+          "rollNo": "CE102",
+          "year": "First",
+          "acadYear": "2024-25"
+        },
+        {
+          "id": 19,
+          "name": "Alexander Young",
+          "rollNo": "CE103",
+          "year": "First",
+          "acadYear": "2024-25"
+        },
+        {
+          "id": 20,
+          "name": "Evelyn King",
+          "rollNo": "CE104",
+          "year": "First",
+          "acadYear": "2024-25"
+        },
+        {
+          "id": 21,
+          "name": "Daniel Wright",
+          "rollNo": "CE105",
+          "year": "First",
+          "acadYear": "2024-25"
+        },
+        {
+          "id": 22,
+          "name": "Ava Scott",
+          "rollNo": "CE106",
+          "year": "First",
+          "acadYear": "2024-25"
+        },
+        {
+          "id": 23,
+          "name": "Matthew Green",
+          "rollNo": "CE107",
+          "year": "First",
+          "acadYear": "2024-25"
+        },
+        {
+          "id": 24,
+          "name": "Sofia Adams",
+          "rollNo": "CE108",
+          "year": "First",
+          "acadYear": "2024-25"
+        }
+      ],
+      "Sem 2": [
+        {
+          "id": 25,
+          "name": "Joseph Baker",
+          "rollNo": "CE201",
+          "year": "First",
+          "acadYear": "2024-25"
+        },
+        {
+          "id": 26,
+          "name": "Scarlett Nelson",
+          "rollNo": "CE202",
+          "year": "First",
+          "acadYear": "2024-25"
+        },
+        {
+          "id": 27,
+          "name": "Samuel Carter",
+          "rollNo": "CE203",
+          "year": "First",
+          "acadYear": "2024-25"
+        },
+        {
+          "id": 28,
+          "name": "Grace Mitchell",
+          "rollNo": "CE204",
+          "year": "First",
+          "acadYear": "2024-25"
+        },
+        {
+          "id": 29,
+          "name": "Henry Perez",
+          "rollNo": "CE205",
+          "year": "First",
+          "acadYear": "2024-25"
+        },
+        {
+          "id": 30,
+          "name": "Chloe Roberts",
+          "rollNo": "CE206",
+          "year": "First",
+          "acadYear": "2024-25"
+        },
+        {
+          "id": 31,
+          "name": "Jackson Turner",
+          "rollNo": "CE207",
+          "year": "First",
+          "acadYear": "2024-25"
+        },
+        {
+          "id": 32,
+          "name": "Victoria Phillips",
+          "rollNo": "CE208",
+          "year": "First",
+          "acadYear": "2024-25"
+        }
+      ]
+    },
+    "AI/ML": {
+      "Sem 3": [
+        {
+          "id": 33,
+          "name": "Ryan Campbell",
+          "rollNo": "AI301",
+          "year": "Second",
+          "acadYear": "2024-25"
+        },
+        {
+          "id": 34,
+          "name": "Luna Parker",
+          "rollNo": "AI302",
+          "year": "Second",
+          "acadYear": "2024-25"
+        },
+        {
+          "id": 35,
+          "name": "Nathan Evans",
+          "rollNo": "AI303",
+          "year": "Second",
+          "acadYear": "2024-25"
+        },
+        {
+          "id": 36,
+          "name": "Hannah Edwards",
+          "rollNo": "AI304",
+          "year": "Second",
+          "acadYear": "2024-25"
+        },
+        {
+          "id": 37,
+          "name": "Isaac Collins",
+          "rollNo": "AI305",
+          "year": "Second",
+          "acadYear": "2024-25"
+        },
+        {
+          "id": 38,
+          "name": "Zoe Stewart",
+          "rollNo": "AI306",
+          "year": "Second",
+          "acadYear": "2024-25"
+        },
+        {
+          "id": 39,
+          "name": "Caleb Sanchez",
+          "rollNo": "AI307",
+          "year": "Second",
+          "acadYear": "2024-25"
+        },
+        {
+          "id": 40,
+          "name": "Eleanor Morris",
+          "rollNo": "AI308",
+          "year": "Second",
+          "acadYear": "2024-25"
+        }
+      ],
+      "Sem 4": [
+        {
+          "id": 41,
+          "name": "Luke Rogers",
+          "rollNo": "AI401",
+          "year": "Second",
+          "acadYear": "2024-25"
+        },
+        {
+          "id": 42,
+          "name": "Lily Reed",
+          "rollNo": "AI402",
+          "year": "Second",
+          "acadYear": "2024-25"
+        },
+        {
+          "id": 43,
+          "name": "Jack Cook",
+          "rollNo": "AI403",
+          "year": "Second",
+          "acadYear": "2024-25"
+        },
+        {
+          "id": 44,
+          "name": "Avery Morgan",
+          "rollNo": "AI404",
+          "year": "Second",
+          "acadYear": "2024-25"
+        },
+        {
+          "id": 45,
+          "name": "Eli Bell",
+          "rollNo": "AI405",
+          "year": "Second",
+          "acadYear": "2024-25"
+        },
+        {
+          "id": 46,
+          "name": "Layla Murphy",
+          "rollNo": "AI406",
+          "year": "Second",
+          "acadYear": "2024-25"
+        },
+        {
+          "id": 47,
+          "name": "Gabriel Rivera",
+          "rollNo": "AI407",
+          "year": "Second",
+          "acadYear": "2024-25"
+        },
+        {
+          "id": 48,
+          "name": "Nora Cooper",
+          "rollNo": "AI408",
+          "year": "Second",
+          "acadYear": "2024-25"
+        }
+      ]
+    },
+    "IoT": {
+      "Sem 5": [
+        {
+          "id": 49,
+          "name": "Owen Richardson",
+          "rollNo": "IoT501",
+          "year": "Third",
+          "acadYear": "2024-25"
+        },
+        {
+          "id": 50,
+          "name": "Ellie Cox",
+          "rollNo": "IoT502",
+          "year": "Third",
+          "acadYear": "2024-25"
+        },
+        {
+          "id": 51,
+          "name": "Wyatt Howard",
+          "rollNo": "IoT503",
+          "year": "Third",
+          "acadYear": "2024-25"
+        },
+        {
+          "id": 52,
+          "name": "Stella Ward",
+          "rollNo": "IoT504",
+          "year": "Third",
+          "acadYear": "2024-25"
+        },
+        {
+          "id": 53,
+          "name": "Julian Torres",
+          "rollNo": "IoT505",
+          "year": "Third",
+          "acadYear": "2024-25"
+        },
+        {
+          "id": 54,
+          "name": "Maya Peterson",
+          "rollNo": "IoT506",
+          "year": "Third",
+          "acadYear": "2024-25"
+        },
+        {
+          "id": 55,
+          "name": "Levi Gray",
+          "rollNo": "IoT507",
+          "year": "Third",
+          "acadYear": "2024-25"
+        },
+        {
+          "id": 56,
+          "name": "Hazel Ramirez",
+          "rollNo": "IoT508",
+          "year": "Third",
+          "acadYear": "2024-25"
+        }
+      ],
+      "Sem 6": [
+        {
+          "id": 57,
+          "name": "Aaron James",
+          "rollNo": "IoT601",
+          "year": "Third",
+          "acadYear": "2024-25"
+        },
+        {
+          "id": 58,
+          "name": "Violet Brooks",
+          "rollNo": "IoT602",
+          "year": "Third",
+          "acadYear": "2024-25"
+        },
+        {
+          "id": 59,
+          "name": "Charles Kelly",
+          "rollNo": "IoT603",
+          "year": "Third",
+          "acadYear": "2024-25"
+        },
+        {
+          "id": 60,
+          "name": "Aurora Sanders",
+          "rollNo": "IoT604",
+          "year": "Third",
+          "acadYear": "2024-25"
+        },
+        {
+          "id": 61,
+          "name": "Eli Price",
+          "rollNo": "IoT605",
+          "year": "Third",
+          "acadYear": "2024-25"
+        },
+        {
+          "id": 62,
+          "name": "Lucy Bennett",
+          "rollNo": "IoT606",
+          "year": "Third",
+          "acadYear": "2024-25"
+        },
+        {
+          "id": 63,
+          "name": "Landon Wood",
+          "rollNo": "IoT607",
+          "year": "Third",
+          "acadYear": "2024-25"
+        },
+        {
+          "id": 64,
+          "name": "Anna Barnes",
+          "rollNo": "IoT608",
+          "year": "Third",
+          "acadYear": "2024-25"
+        }
+      ]
+    },
+    "EXTC": {
+      "Sem 7": [
+        {
+          "id": 65,
+          "name": "Carter Ross",
+          "rollNo": "EXTC701",
+          "year": "Fourth",
+          "acadYear": "2024-25"
+        },
+        {
+          "id": 66,
+          "name": "Nova Henderson",
+          "rollNo": "EXTC702",
+          "year": "Fourth",
+          "acadYear": "2024-25"
+        },
+        {
+          "id": 67,
+          "name": "Hudson Coleman",
+          "rollNo": "EXTC703",
+          "year": "Fourth",
+          "acadYear": "2024-25"
+        },
+        {
+          "id": 68,
+          "name": "Ellie Jenkins",
+          "rollNo": "EXTC704",
+          "year": "Fourth",
+          "acadYear": "2024-25"
+        },
+        {
+          "id": 69,
+          "name": "Elias Perry",
+          "rollNo": "EXTC705",
+          "year": "Fourth",
+          "acadYear": "2024-25"
+        },
+        {
+          "id": 70,
+          "name": "Ruby Powell",
+          "rollNo": "EXTC706",
+          "year": "Fourth",
+          "acadYear": "2024-25"
+        },
+        {
+          "id": 71,
+          "name": "Roman Long",
+          "rollNo": "EXTC707",
+          "year": "Fourth",
+          "acadYear": "2024-25"
+        },
+        {
+          "id": 72,
+          "name": "Aria Patterson",
+          "rollNo": "EXTC708",
+          "year": "Fourth",
+          "acadYear": "2024-25"
+        }
+      ],
+      "Sem 8": [
+        {
+          "id": 73,
+          "name": "Miles Hughes",
+          "rollNo": "EXTC801",
+          "year": "Fourth",
+          "acadYear": "2024-25"
+        },
+        {
+          "id": 74,
+          "name": "Lydia Flores",
+          "rollNo": "EXTC802",
+          "year": "Fourth",
+          "acadYear": "2024-25"
+        },
+        {
+          "id": 75,
+          "name": "Theo Washington",
+          "rollNo": "EXTC803",
+          "year": "Fourth",
+          "acadYear": "2024-25"
+        },
+        {
+          "id": 76,
+          "name": "Emery Butler",
+          "rollNo": "EXTC804",
+          "year": "Fourth",
+          "acadYear": "2024-25"
+        },
+        {
+          "id": 77,
+          "name": "Kai Simmons",
+          "rollNo": "EXTC805",
+          "year": "Fourth",
+          "acadYear": "2024-25"
+        },
+        {
+          "id": 78,
+          "name": "Piper Foster",
+          "rollNo": "EXTC806",
+          "year": "Fourth",
+          "acadYear": "2024-25"
+        },
+        {
+          "id": 79,
+          "name": "Jaxon Gonzales",
+          "rollNo": "EXTC807",
+          "year": "Fourth",
+          "acadYear": "2024-25"
+        },
+        {
+          "id": 80,
+          "name": "Sadie Bryant",
+          "rollNo": "EXTC808",
+          "year": "Fourth",
+          "acadYear": "2024-25"
+        }
+      ]
+    },
+    "Civil": {
+      "Sem 1": [
+        {
+          "id": 81,
+          "name": "Ezekiel Alexander",
+          "rollNo": "CIV101",
+          "year": "First",
+          "acadYear": "2024-25"
+        },
+        {
+          "id": 82,
+          "name": "Natalie Russell",
+          "rollNo": "CIV102",
+          "year": "First",
+          "acadYear": "2024-25"
+        },
+        {
+          "id": 83,
+          "name": "Josiah Griffin",
+          "rollNo": "CIV103",
+          "year": "First",
+          "acadYear": "2024-25"
+        },
+        {
+          "id": 84,
+          "name": "Delilah Diaz",
+          "rollNo": "CIV104",
+          "year": "First",
+          "acadYear": "2024-25"
+        },
+        {
+          "id": 85,
+          "name": "Asher Hayes",
+          "rollNo": "CIV105",
+          "year": "First",
+          "acadYear": "2024-25"
+        },
+        {
+          "id": 86,
+          "name": "Clara Myers",
+          "rollNo": "CIV106",
+          "year": "First",
+          "acadYear": "2024-25"
+        },
+        {
+          "id": 87,
+          "name": "Eli Ford",
+          "rollNo": "CIV107",
+          "year": "First",
+          "acadYear": "2024-25"
+        },
+        {
+          "id": 88,
+          "name": "Vivian Hamilton",
+          "rollNo": "CIV108",
+          "year": "First",
+          "acadYear": "2024-25"
+        }
+      ],
+      "Sem 2": [
+        {
+          "id": 89,
+          "name": "Graham Graham",
+          "rollNo": "CIV201",
+          "year": "First",
+          "acadYear": "2024-25"
+        },
+        {
+          "id": 90,
+          "name": "Ariana Sullivan",
+          "rollNo": "CIV202",
+          "year": "First",
+          "acadYear": "2024-25"
+        },
+        {
+          "id": 91,
+          "name": "Rowan Wallace",
+          "rollNo": "CIV203",
+          "year": "First",
+          "acadYear": "2024-25"
+        },
+        {
+          "id": 92,
+          "name": "Adeline Woods",
+          "rollNo": "CIV204",
+          "year": "First",
+          "acadYear": "2024-25"
+        },
+        {
+          "id": 93,
+          "name": "Easton Cole",
+          "rollNo": "CIV205",
+          "year": "First",
+          "acadYear": "2024-25"
+        },
+        {
+          "id": 94,
+          "name": "Liliana West",
+          "rollNo": "CIV206",
+          "year": "First",
+          "acadYear": "2024-25"
+        },
+        {
+          "id": 95,
+          "name": "Micah Jordan",
+          "rollNo": "CIV207",
+          "year": "First",
+          "acadYear": "2024-25"
+        },
+        {
+          "id": 96,
+          "name": "Isla Owens",
+          "rollNo": "CIV208",
+          "year": "First",
+          "acadYear": "2024-25"
+        }
+      ]
+    },
+    "Mechanical": {
+      "Sem 3": [
+        {
+          "id": 97,
+          "name": "Silas Reynolds",
+          "rollNo": "ME301",
+          "year": "Second",
+          "acadYear": "2024-25"
+        },
+        {
+          "id": 98,
+          "name": "Lyla Fisher",
+          "rollNo": "ME302",
+          "year": "Second",
+          "acadYear": "2024-25"
+        },
+        {
+          "id": 99,
+          "name": "Declan Ellis",
+          "rollNo": "ME303",
+          "year": "Second",
+          "acadYear": "2024-25"
+        },
+        {
+          "id": 100,
+          "name": "Ayla Harrison",
+          "rollNo": "ME304",
+          "year": "Second",
+          "acadYear": "2024-25"
+        },
+        {
+          "id": 101,
+          "name": "Carson Gibson",
+          "rollNo": "ME305",
+          "year": "Second",
+          "acadYear": "2024-25"
+        },
+        {
+          "id": 102,
+          "name": "Eva McDaniel",
+          "rollNo": "ME306",
+          "year": "Second",
+          "acadYear": "2024-25"
+        },
+        {
+          "id": 103,
+          "name": "Ryder Cruz",
+          "rollNo": "ME307",
+          "year": "Second",
+          "acadYear": "2024-25"
+        },
+        {
+          "id": 104,
+          "name": "Eliana Marshall",
+          "rollNo": "ME308",
+          "year": "Second",
+          "acadYear": "2024-25"
+        }
+      ],
+      "Sem 4": [
+        {
+          "id": 105,
+          "name": "Bennett Ortiz",
+          "rollNo": "ME401",
+          "year": "Second",
+          "acadYear": "2024-25"
+        },
+        {
+          "id": 106,
+          "name": "Londyn Gomez",
+          "rollNo": "ME402",
+          "year": "Second",
+          "acadYear": "2024-25"
+        },
+        {
+          "id": 107,
+          "name": "Leonardo Murray",
+          "rollNo": "ME403",
+          "year": "Second",
+          "acadYear": "2024-25"
+        },
+        {
+          "id": 108,
+          "name": "Aubree Freeman",
+          "rollNo": "ME404",
+          "year": "Second",
+          "acadYear": "2024-25"
+        },
+        {
+          "id": 109,
+          "name": "Colton Wells",
+          "rollNo": "ME405",
+          "year": "Second",
+          "acadYear": "2024-25"
+        },
+        {
+          "id": 110,
+          "name": "Jade Webb",
+          "rollNo": "ME406",
+          "year": "Second",
+          "acadYear": "2024-25"
+        },
+        {
+          "id": 111,
+          "name": "Axel Simpson",
+          "rollNo": "ME407",
+          "year": "Second",
+          "acadYear": "2024-25"
+        },
+        {
+          "id": 112,
+          "name": "Madeline Stevens",
+          "rollNo": "ME408",
+          "year": "Second",
+          "acadYear": "2024-25"
+        }
+      ]
+    },
+    "Automobile": {
+      "Sem 5": [
+        {
+          "id": 113,
+          "name": "Emmett Tucker",
+          "rollNo": "AUTO501",
+          "year": "Third",
+          "acadYear": "2024-25"
+        },
+        {
+          "id": 114,
+          "name": "Harmony Porter",
+          "rollNo": "AUTO502",
+          "year": "Third",
+          "acadYear": "2024-25"
+        },
+        {
+          "id": 115,
+          "name": "Karter Hunter",
+          "rollNo": "AUTO503",
+          "year": "Third",
+          "acadYear": "2024-25"
+        },
+        {
+          "id": 116,
+          "name": "Rylee Hicks",
+          "rollNo": "AUTO504",
+          "year": "Third",
+          "acadYear": "2024-25"
+        },
+        {
+          "id": 117,
+          "name": "Maxwell Crawford",
+          "rollNo": "AUTO505",
+          "year": "Third",
+          "acadYear": "2024-25"
+        },
+        {
+          "id": 118,
+          "name": "Alexandra Henry",
+          "rollNo": "AUTO506",
+          "year": "Third",
+          "acadYear": "2024-25"
+        },
+        {
+          "id": 119,
+          "name": "Brayden Boyd",
+          "rollNo": "AUTO507",
+          "year": "Third",
+          "acadYear": "2024-25"
+        },
+        {
+          "id": 120,
+          "name": "Valentina Mason",
+          "rollNo": "AUTO508",
+          "year": "Third",
+          "acadYear": "2024-25"
+        }
+      ],
+      "Sem 6": [
+        {
+          "id": 121,
+          "name": "Gael Morales",
+          "rollNo": "AUTO601",
+          "year": "Third",
+          "acadYear": "2024-25"
+        },
+        {
+          "id": 122,
+          "name": "Daisy Kennedy",
+          "rollNo": "AUTO602",
+          "year": "Third",
+          "acadYear": "2024-25"
+        },
+        {
+          "id": 123,
+          "name": "Jasper Warren",
+          "rollNo": "AUTO603",
+          "year": "Third",
+          "acadYear": "2024-25"
+        },
+        {
+          "id": 124,
+          "name": "Elise Dixon",
+          "rollNo": "AUTO604",
+          "year": "Third",
+          "acadYear": "2024-25"
+        },
+        {
+          "id": 125,
+          "name": "Maddox Ramos",
+          "rollNo": "AUTO605",
+          "year": "Third",
+          "acadYear": "2024-25"
+        },
+        {
+          "id": 126,
+          "name": "Willow Reyes",
+          "rollNo": "AUTO606",
+          "year": "Third",
+          "acadYear": "2024-25"
+        },
+        {
+          "id": 127,
+          "name": "Silas Burns",
+          "rollNo": "AUTO607",
+          "year": "Third",
+          "acadYear": "2024-25"
+        },
+        {
+          "id": 128,
+          "name": "Margaret Gordon",
+          "rollNo": "AUTO608",
+          "year": "Third",
+          "acadYear": "2024-25"
+        }
+      ]
+    }
+  }
+}

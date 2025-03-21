@@ -1,14 +1,18 @@
-import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import AdminAuth from "./components/AdminAuth";
+import Dashboard from "./components/Dashboard";
+import { AuthProvider } from "./context/AuthContext";
 
 const App = () => {
   return (
-    <div className="min-h-screen bg-gray-100 py-6 flex flex-col justify-center sm:py-12">
-      <div className="relative py-3 sm:max-w-xl sm:mx-auto">
-        <div className="relative px-4 py-10 bg-white shadow-lg sm:rounded-3xl sm:p-20">
-          <h1 className="text-3xl font-bold text-gray-900 mb-4">Welcome to 3DVerse</h1>
-        </div>
-      </div>
-    </div>
+    <AuthProvider>
+      <Router>
+        <Routes>
+          <Route path="/" element={<AdminAuth />} />
+          <Route path="/dashboard" element={<Dashboard />} />
+        </Routes>
+      </Router>
+    </AuthProvider>
   );
 };
 
