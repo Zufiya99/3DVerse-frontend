@@ -254,7 +254,7 @@ const AdminAuth = () => {
         theme="colored"
       />
 
-      <div className="bg-white p-10 rounded-3xl shadow-2xl w-full max-w-md transform transition-all duration-300 hover:scale-105">
+      <div className="bg-white p-10 rounded-3xl shadow-2xl w-full max-w-md transform transition-all duration-300">
         <h2 className="text-4xl font-extrabold text-gray-800 text-center mb-8">
           {isLogin ? "Admin Login" : "Admin Sign Up"}
         </h2>

@@ -4,14 +4,17 @@ import {
   FaSearch,
   FaChevronRight,
   FaChevronDown,
+  FaTimes,
 } from "react-icons/fa";
 import studentData from "./studentData.json"; // Import the JSON file
+import { Link } from "react-router-dom";
 
 const AdminDashboard = () => {
   const [selectedDept, setSelectedDept] = useState(null);
   const [selectedSem, setSelectedSem] = useState(null);
   const [searchQuery, setSearchQuery] = useState("");
   const [filteredStudents, setFilteredStudents] = useState([]);
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
   const departments = [
     "Information Technology",
@@ -35,22 +38,12 @@ const AdminDashboard = () => {
     "Sem 8",
   ];
 
-  // Filter departments based on search query
-  const filteredDepartments = departments.filter((dept) =>
-    dept.toLowerCase().includes(searchQuery.toLowerCase())
-  );
-
-  // Filter students based on selected department and semester
   useEffect(() => {
     if (selectedDept && selectedSem) {
       const department = studentData.departments[selectedDept];
       if (department) {
         const semester = department[selectedSem];
-        if (semester) {
-          setFilteredStudents(semester);
-        } else {
-          setFilteredStudents([]);
-        }
+        setFilteredStudents(semester || []);
       } else {
         setFilteredStudents([]);
       }
@@ -62,15 +55,27 @@ const AdminDashboard = () => {
   return (
     <div className="flex h-screen bg-gray-100">
       {/* Sidebar */}
-      <aside className="w-64 bg-gradient-to-b from-Primary to-green-900 text-white flex flex-col p-5">
-        {/* Logo */}
-        <div className="text-center text-2xl font-bold mb-8">
-          <img
-            src="./Images/mhssce_logo.png"
-            alt="MHSSCE Logo"
-            className="w-24 mx-auto mb-2"
-          />
-          MHSSCE Admin
+      <aside
+        className={`fixed lg:relative top-0 left-0 h-full w-64 bg-gradient-to-b from-Primary to-green-900 text-white flex flex-col p-5 transition-transform duration-300 ${
+          isSidebarOpen ? "translate-x-0" : "-translate-x-64"
+        } lg:translate-x-0`}
+      >
+        {/* Sidebar Header */}
+        <div className="flex justify-between items-center mb-6">
+          <div className="text-center text-2xl font-bold">
+            <img
+              src="./Images/mhssce_logo.png"
+              alt="MHSSCE Logo"
+              className="w-24 mx-auto mb-2"
+            />
+            MHSSCE Admin
+          </div>
+          <button
+            className="lg:hidden text-white text-2xl"
+            onClick={() => setIsSidebarOpen(false)}
+          >
+            <FaTimes />
+          </button>
         </div>
 
         {/* Search Bar */}
@@ -82,41 +87,48 @@ const AdminDashboard = () => {
             onChange={(e) => setSearchQuery(e.target.value)}
             className="w-full p-2 pl-10 rounded-lg bg-green-700 text-white placeholder-gray-200 focus:outline-none focus:ring-2 focus:ring-green-300"
           />
-          <FaSearch className="absolute left-3 top-3 text-gray-200" />
         </div>
 
         {/* Department Navigation */}
         <div className="overflow-y-auto flex-1 scrollbar-hide">
-          {filteredDepartments.map((dept, index) => (
-            <div key={index} className="mb-2">
-              <button
-                className="w-full flex items-center justify-between p-3 hover:bg-green-700 rounded-lg transition-all"
-                onClick={() =>
-                  setSelectedDept(selectedDept === dept ? null : dept)
-                }
-              >
-                <span>{dept}</span>
-                {selectedDept === dept ? <FaChevronDown /> : <FaChevronRight />}
-              </button>
+          {departments
+            .filter((dept) =>
+              dept.toLowerCase().includes(searchQuery.toLowerCase())
+            )
+            .map((dept, index) => (
+              <div key={index} className="mb-2">
+                <button
+                  className="w-full flex items-center justify-between p-3 hover:bg-green-700 rounded-lg transition-all"
+                  onClick={() =>
+                    setSelectedDept(selectedDept === dept ? null : dept)
+                  }
+                >
+                  <span>{dept}</span>
+                  {selectedDept === dept ? (
+                    <FaChevronDown />
+                  ) : (
+                    <FaChevronRight />
+                  )}
+                </button>
 
-              {/* Semester Options */}
-              {selectedDept === dept && (
-                <div className="pl-5 mt-2">
-                  {semesters.map((sem, idx) => (
-                    <button
-                      key={idx}
-                      onClick={() => setSelectedSem(sem)}
-                      className={`block w-full text-left p-2 hover:bg-green-700 rounded-md transition ${
-                        selectedSem === sem ? "bg-green-700" : ""
-                      }`}
-                    >
-                      {sem}
-                    </button>
-                  ))}
-                </div>
-              )}
-            </div>
-          ))}
+                {/* Semester Options */}
+                {selectedDept === dept && (
+                  <div className="pl-5 mt-2">
+                    {semesters.map((sem, idx) => (
+                      <button
+                        key={idx}
+                        onClick={() => setSelectedSem(sem)}
+                        className={`block w-full text-left p-2 hover:bg-green-700 rounded-md transition ${
+                          selectedSem === sem ? "bg-green-700" : ""
+                        }`}
+                      >
+                        {sem}
+                      </button>
+                    ))}
+                  </div>
+                )}
+              </div>
+            ))}
         </div>
       </aside>
 
@@ -125,7 +137,12 @@ const AdminDashboard = () => {
         {/* Header */}
         <div className="flex justify-between items-center mb-6">
           <h1 className="text-3xl font-bold text-Primary">Admin Dashboard</h1>
-          <FaBars className="text-2xl cursor-pointer text-gray-700 lg:hidden" />
+          <button
+            className="lg:hidden text-2xl cursor-pointer text-gray-700"
+            onClick={() => setIsSidebarOpen(true)}
+          >
+            <FaBars />
+          </button>
         </div>
 
         {/* Content Display */}
@@ -137,19 +154,19 @@ const AdminDashboard = () => {
 
             {/* Cards for Department and Semester Details */}
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
-              <div className="bg-green-50 p-6 rounded-lg shadow-md animate-fade-in">
+              <div className="bg-green-50 p-6 rounded-lg shadow-md">
                 <h3 className="text-lg font-semibold text-Primary mb-2">
                   Department
                 </h3>
                 <p className="text-gray-700">{selectedDept}</p>
               </div>
-              <div className="bg-green-50 p-6 rounded-lg shadow-md animate-fade-in">
+              <div className="bg-green-50 p-6 rounded-lg shadow-md">
                 <h3 className="text-lg font-semibold text-Primary mb-2">
                   Semester
                 </h3>
                 <p className="text-gray-700">{selectedSem}</p>
               </div>
-              <div className="bg-green-50 p-6 rounded-lg shadow-md animate-fade-in">
+              <div className="bg-green-50 p-6 rounded-lg shadow-md">
                 <h3 className="text-lg font-semibold text-Primary mb-2">
                   Total Students
                 </h3>
@@ -157,39 +174,37 @@ const AdminDashboard = () => {
               </div>
             </div>
 
-            {/* Student Data Table */}
-            <div className="bg-white rounded-lg shadow-md overflow-hidden animate-fade-in">
-              <table className="w-full">
+            {/* Responsive Student Data Table */}
+            <div className="overflow-x-auto bg-white rounded-lg shadow-md">
+              <table className="min-w-full border border-gray-200">
                 <thead className="bg-Primary text-white">
                   <tr>
-                    <th className="p-3">Sr. No</th>
-                    <th className="p-3">Name</th>
-                    <th className="p-3">Roll No</th>
-                    <th className="p-3">Department</th>
-                    <th className="p-3">Year</th>
-                    <th className="p-3">Academic Year</th>
-                    <th className="p-3">Form</th>
+                    <th className="p-3 text-left">Sr. No</th>
+                    <th className="p-3 text-left">Name</th>
+                    <th className="p-3 text-left">Roll No</th>
+                    <th className="p-3 text-left">Department</th>
+                    <th className="p-3 text-left">Year</th>
+                    <th className="p-3 text-left">Academic Year</th>
                   </tr>
                 </thead>
                 <tbody>
                   {filteredStudents.map((student, index) => (
-                    <tr
-                      key={student.id}
-                      className="border-b hover:bg-gray-50 transition-all"
-                    >
-                      <td className="p-3 text-center">{index + 1}</td>
-                      <td className="p-3">{student.name}</td>
+                    <tr key={student.id} className="border-b hover:bg-gray-50">
+                      <td className="p-3">{index + 1}</td>
+                      {/* <td className="p-3">{student.name}</td> */}
+                      <td className="p-3">
+                        <Link
+                          to={`/student/${student.id}`}
+                          className="text-blue-600 hover:underline"
+                        >
+                          {student.name}
+                        </Link>
+                      </td>
+
                       <td className="p-3">{student.rollNo}</td>
                       <td className="p-3">{selectedDept}</td>
                       <td className="p-3">{student.year}</td>
                       <td className="p-3">{student.acadYear}</td>
-                      <td className="p-3">
-                        <select className="border p-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-Primary">
-                          <option>D Form</option>
-                          <option>Exam Form</option>
-                          <option>Hall Ticket</option>
-                        </select>
-                      </td>
                     </tr>
                   ))}
                 </tbody>
